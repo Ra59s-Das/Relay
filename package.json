@@ -1,0 +1,17 @@
+{
+  "name": "yt-drive-uploader",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "poll": "node scripts/poller.js"
+  },
+  "dependencies": {
+    "next": "14.2.35",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "googleapis": "144.0.0"
+  }
+}
