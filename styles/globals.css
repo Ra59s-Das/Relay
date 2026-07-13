@@ -1,0 +1,48 @@
+:root {
+  --bg: #0f1417;
+  --surface: #161d21;
+  --surface-raised: #1c252a;
+  --border: #2a3339;
+  --text: #e8edee;
+  --text-dim: #8b9aa0;
+  --accent: #4fd1c5;
+  --accent-dim: #2c5b57;
+  --success: #6ee7a8;
+  --warning: #f5c451;
+  --error: #f87171;
+
+  --font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", monospace;
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+}
+
+::selection {
+  background: var(--accent-dim);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
